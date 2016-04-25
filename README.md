@@ -2,7 +2,7 @@
 A  JavaScript plug-in can be encoded and decoded with Base64.<br>
 
 ###Illustration
-This plug-in can used for characters which UNICODE is between 0000 0000 to 0000 FFFF.<br>
+This plug-in can used for characters which UNICODE is between 0000 0000 and 0000 FFFF.<br>
 Include Number, English, Chinese, Korean and so on.<br>
 And you can set the Secret Key by your own situation.
 
