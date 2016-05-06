@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>codeBase64.js example</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<script type="text/javascript" src="codeBase64.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<style type="text/css">
+	
+	</style>
+</head>
+<body>
+<div class ="wrapper">
+<div class="left">
+	<i class="hole leftHole"></i>
+	<i class="hole rightHole"></i>
+	<h3>Coding Area</h3>
+	<p>
+		<span class="lab">secret key</span>
+		<input type="text" placeholder="put on the head"></input>
+	</p>
+	<p>
+		<!-- <span class="lab"></span> -->
+		<input type="text" placeholder="put on the end"></input>
+	</p>
+	<p>
+		<span class="lab lab-text">plaintext</span>
+		<textarea rows="5" class="plaintext"></textarea>	
+	</p>
+	<button class="encrypt">encode</button>
+</div>
+<div class="right">
+    <i class="hole leftHole"></i>
+	<i class="hole rightHole"></i>
+	<h3>Decoding Area</h3>
+	<p>
+		<span class="lab">secret key</span>
+		<input type="text" placeholder="put ont the head"></input>
+	</p>
+	<p>
+		<input type="text" placeholder="put on the end"></input>
+	</p>
+	<p>
+		<span class="lab lab-text">ciphertext</span>
+		<textarea rows="5" class="ciphertext"></textarea>
+	</p>
+	<button class="decrypt">decode</button>
+</div>
+</div>
+<div class="about">
+	<div class="box">
+		<h4>About</h4>
+		<p>This is a JavaScript plug-in can be <em>encoded and decoded</em> with Base64.</p>
+		<p>This plug-in can used for characters which UNICODE is between 0000 0000 and 0000 FFFF. Include <em>Number, English, Chinese, Korean</em> and so on.</p>
+		<p>And you can set <em>the Secret Key</em> by your own situation.</p>
+	</div>
+	<div class="box">
+		<h4>Usage</h4>
+		<p>To use codeBase64, the following files should always be included.</p>
+		<p class="code">&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/&gt;</br>&lt;script type="text/javascript" src="codeBase64.js"&gt;&lt;/script&gt;</p>
+		<p>Suppose we want to encode a string, then decode it. If you do not fill Secret Key, the default is null. Result is encode or decode your input directly. CodeBase64 makes it as simple as:</p>
+		<p class="code">var result = codeBase64.encode('hello'[,headKey,endKey]);</br>var str = codeBase64.decode(result[,headKey,endKey]);</p>
+		<p>If you have any questions, you can refer to <a href="https://github.com/WangYiyao/codeBase64" target="_blank">the source</a> of this demo, or Email <em>viana37@sina.com</em>.</p>
+	</div>
+	<div class="box">
+		<h4>Dowload</h4>
+		<p>CodeBase64 is</a> developed by <em>Yiyao Wang</em>. It is an open-source project under MIT License.</p>
+		<p><a id="view" href="https://github.com/WangYiyao/codeBase64" target="_blank">View at Github</a><a id="download" href="codeBase64.js" download="codeBase64" target="_blank">Download codeBase64.js</a><a id="downloadMin" href="codeBase64.min.js" download="codeBase64.min" target="_blank">Download codeBase64.min.js</a></p>
+	</div>
+</div>
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
