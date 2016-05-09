@@ -1,0 +1,173 @@
+*{
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+}
+html{
+	background-color: #DDD8D5;
+	font-family: Arial, "Helvetica Neue", Helvetica;
+}
+textarea, input{
+	text-align: center;
+	width: 75%;
+	float: right;
+	border: 1px solid #5D5B5B;
+	border-radius: 15px;
+	margin-bottom: 10px;
+	font-family: Arial, "Helvetica Neue", Helvetica;
+}
+input{
+	height: 25px;
+	border-radius: 25px;
+}
+textarea{
+	margin-bottom: 35px;
+}
+.wrapper{
+	// display: inline-block;
+	width: 830px;
+	margin: auto;
+}
+.left, .right{
+	position: relative;
+	display: inline-block;
+	width: 350px;
+	margin-top: 100px;
+	// margin: 100px 4% 0 20%;
+	border: 10px ridge #984D26;
+	background-color: #DB7642;
+	padding: 25px;
+	vertical-align: top;
+}
+.right{
+	// margin: 100px 20% 0 4%;
+	margin-left: 120px;
+}
+.left::before,.right::before{
+	content: '';
+	position: absolute;
+	// border: 4px solid yellow;
+	padding: 2px;
+	background-color: #984D26;
+	width: 4px;
+	height: 100px;
+	top: -100px;
+	left:45px;
+	z-index: 10;
+}
+.left::after,.right::after{
+	content: '';
+	position: absolute;
+	// border: 4px solid yellow;
+	padding: 2px;
+	background-color: #984D26;
+	width: 4px;
+	height: 100px;
+	top: -100px;
+	right:45px;
+	z-index: 10;
+}
+.hole{
+	width: 14px;
+	height: 14px;
+	border-radius: 7px;
+	background-color: white;
+	position: absolute;
+	top:-2px;
+}
+.leftHole{
+	left: 42px;
+}
+.rightHole{
+	right: 42px;
+}
+h3{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 25px;
+	font-family: "Brush Script MT", Arial;
+	font-size: 25px;
+}
+.lab{
+	position: absolute;
+	width: 90px;
+	height: 25px;
+	background-color: #984D26;
+	border-radius: 25px;
+	text-align: center;
+	color: #fff;
+	font-weight: 500;
+	left: 20px;
+}
+.lab-text{
+	top:145px;
+}
+button{
+	position: absolute;
+	bottom: 10px;
+	right: 70px;
+	background-color: #984D26;
+	height: 35px;
+	border-radius: 35px;
+	width: 120px;
+	border:none;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	box-shadow: 5px 5px #673419;
+}
+button:hover,#download:hover, #view:hover, #downloadMin:hover{
+	background-color: #673419;
+	cursor: pointer;
+}
+.about{
+	width: 830px;
+	margin: 250px auto 50px auto;
+	line-height: 1.2em;
+	// background-color: #FBBFA1;
+}
+.about p{
+	margin-bottom: 15px;
+}
+h4{
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	// color: #DB7642;
+	color: #984D26;
+	font-family: "Brush Script MT", Arial;
+}
+.box{
+	margin-top: 50px;
+	border: 2px solid #504F4F;
+	padding: 10px;
+	border-radius: 10px;
+}
+em, .box a{
+	// color: #DB7642;
+	color: #984D26;
+	font-weight: bolder;
+}
+.code{
+	display: inline-block;
+	font-size: 14px;
+	border: 1px dotted #673419;
+	color: #673419;
+	border-radius: 5px;
+	padding: 3px;
+}
+.box a{
+	text-decoration: underline;
+}
+a:hover{
+	cursor: pointer;
+	color: #673419;
+}
+#download, #view, #downloadMin{
+	margin-right: 35px;
+	background-color: #984D26;
+	color: #fff;
+	padding: 7px 15px;
+	border-radius: 5px;
+	text-decoration: none;
+}
