@@ -3,7 +3,7 @@
 <head>
 	<title>codeBase64.js example</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<script type="text/javascript" src="codeBase64.min.js"></script>
+	<script type="text/javascript" src="codeBase64.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css"/>
 </head>
 <body>
@@ -66,92 +66,5 @@
 	</div>
 </div>
 <script type="text/javascript" src="index.js"></script>
-=======
-	<style type="text/css">
-	*{
-		box-sizing: border-box;
-	}
-	.container{
-		width: 75%;
-		margin: 5% auto;
-	}
-	.show{
-		display: inline-block;
-		vertical-align: bottom;
-		width: 23%;
-	}
-	textarea{
-		width: 100%;
-		border: 1px solid #5D5B5B;
-		border-radius: 3px;
-	}
-	.ctrl{
-		display: inline-block;
-		width: 50%;
-		vertical-align: bottom;
-	}
-	.en-box, .de-box{
-		width:100%;
-		padding: 3% 10% 0 10%;
-	}
-	</style>
-</head>
-<body>
-<div class="container">
-	<div class="show">
-		<textarea placeholder="Plaintext" rows="5" class="plaintext"></textarea>
-	</div>
-	<div class="ctrl">
-		<div class="en-box">
-			<input type="text" placeholder="secret key(head)"></input>
-			<input type="text" placeholder="secret key(end)"></input>
-			<button class="encrypt">encode</button>
-		</div>
-		<dir class="de-box">
-			<input type="text" placeholder="secret key(head)"></input>
-			<input type="text" placeholder="secret key(end)"></input>
-			<button class="decrypt">decode</button>
-		</dir>
-	</div>
-	<div class="show">
-		<textarea placeholder="Ciphertext" rows="5" class="ciphertext"></textarea>
-	</div>
-</div>
-
-
-<script type="text/javascript">
-	function encode(){
-		var plaintext = document.getElementsByClassName('plaintext')[0].value;
-		var arr = document.getElementsByTagName('input');
-		var headKey = arr[0].value;
-		var endKey = arr[1].value;
-		
-		var temp = codeBase64.encode(plaintext,headKey,endKey);
-		document.getElementsByClassName('ciphertext')[0].value = temp;
-	}
-
-	function decode(){
-		var ciphertext = document.getElementsByClassName('ciphertext')[0].value;
-		var arr = document.getElementsByTagName('input');
-		var headKey = arr[2].value;
-		var endKey = arr[3].value;
-
-		document.getElementsByClassName('plaintext')[0].value = codeBase64.decode(ciphertext,headKey,endKey);
-	}
-	
-	window.onload = function(){
-		var arr = document.getElementsByTagName('input');
-		for(var i = 0; i < 4; i++){
-			arr[i].value = '';
-		}
-		var arr2 = document.getElementsByTagName('textarea');
-		arr2[0].value = '';
-		arr2[1].value = '';
-		document.getElementsByClassName('encrypt')[0].onclick = function(){encode();};
-		document.getElementsByClassName('decrypt')[0].onclick = function(){decode();};
-	}
-</script>
->>>>>>> 14356f04e49f4b52a2eab256c9754212a85c0672
-
 </body>
 </html>
